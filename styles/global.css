@@ -20,8 +20,8 @@ header {
     background-color: var(--header-background);
 }
 
-.current-poll {
-    display: flex;
+.rendered-poll-container {
+    
 }
 
 .input-section {
