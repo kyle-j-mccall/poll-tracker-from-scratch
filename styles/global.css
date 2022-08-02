@@ -20,10 +20,30 @@ header {
     background-color: var(--header-background);
 }
 
+.current-poll {
+    display: flex;
+}
+
+.input-section {
+    display: block;
+    
+}
+
+button {
+    margin: 10px;
+}
+
+.vote-buttons {
+    display: flex;
+    
+}
+
 main {
     padding: 20px;
    
 }
+
+
 
 footer {
     position: sticky;

@@ -30,7 +30,7 @@ pollForm.addEventListener('submit', (e) => {
     optionA = userOptionA;
     optionB = userOptionB;
     
-    displayPoll();
+    displaCurrentPoll();
 
     pollForm.reset();
 
@@ -41,7 +41,7 @@ pollForm.addEventListener('submit', (e) => {
 });
 
 
-function displayPoll() {
+function displaCurrentPoll() {
     const currentPoll = renderCurrentPoll(question, optionA, optionB);
     currentPollEl.append(currentPoll);
 }
