@@ -16,16 +16,40 @@
 </head>
 
 <body>
+    
     <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+        <h1>Poll Tracker</h1>
     </header>
-
     <main>
+        <section id="current-poll-section">
+            <h3>Current Poll</h3>
+        </section>
 
+        <section>
+            <form id="poll-form">
+                <h3>Create A Poll</h3>
+                <label>
+                    Question:
+                    <input id="question-input" name="question">
+                </label>
+                <label>
+                    Option A:
+                    <input id="option-a-input" name="option-a">
+                </label>
+                <label>
+                    Option B:
+                    <input id="option-b-input" name="option-b">
+                </label>
+                <button id="create-poll-button">Create poll</button>
+            </form>
+        </section>
     </main>
 
-    <footer>&copy;2022 Software Developer</footer>
+    
+
+   
+
+    
 
     <script type="module" src="app.js"></script>
 </body>
