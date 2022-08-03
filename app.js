@@ -12,6 +12,8 @@ const optionAButton = document.getElementById('option-a-button');
 const optionBButton = document.getElementById('option-b-button');
 const submitPollButton = document.getElementById('submit-poll-button');
 const pastPollContainer = document.getElementById('past-poll-container');
+const subtractAButton = document.getElementById('subtract-a-button');
+const subtractBButton = document.getElementById('subtract-b-button');
 
 const pollArray = [];
 
@@ -52,11 +54,22 @@ optionBButton.addEventListener('click', () => {
     
 });
 
+subtractAButton.addEventListener('click', () => {
+    optionATally--;
+    displayCurrentPoll();
+});
+
+subtractBButton.addEventListener('click', () => {
+    optionBTally--;
+    displayCurrentPoll();
+});
+
 submitPollButton.addEventListener('click', () => {
     pastPollContainer.textContent = '';
     displayPastPolls();
     optionATally = 0;
     optionBTally = 0;
+    currentPollEl.textContent = '';
 
 });
 
@@ -81,8 +94,8 @@ function displayPastPolls() {
     
 
     for (let poll of pollArray) {
-      const currentPoll = renderCurrentPoll(poll.question, poll.optionA, poll.optionB, poll.optionACount, poll.optionBCount);
-      pastPollContainer.append(currentPoll);
+        const currentPoll = renderCurrentPoll(poll.question, poll.optionA, poll.optionB, poll.optionACount, poll.optionBCount);
+        pastPollContainer.append(currentPoll);
 
     }
 
