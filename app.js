@@ -24,7 +24,6 @@ let optionATally = 0;
 let optionBTally = 0;
 
 pollForm.addEventListener('submit', (e) => {
-    console.log(e);
     e.preventDefault();
     const data = new FormData(pollForm);
     

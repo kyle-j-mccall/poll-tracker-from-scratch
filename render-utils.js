@@ -6,8 +6,8 @@ export function renderCurrentPoll(question, optionA, optionB, optionATally, opti
     const optionBEl = document.createElement('p');
     const optionBTallyEl = document.createElement('p');
     
-    optionATallyEl.textContent = `votes: ${optionATally}`;
-    optionBTallyEl.textContent = `votes: ${optionBTally}`;
+    optionATallyEl.textContent = `votes A: ${optionATally}`;
+    optionBTallyEl.textContent = `votes B: ${optionBTally}`;
 
     userQuestionEl.textContent = question;
     optionAEl.textContent = optionA;
