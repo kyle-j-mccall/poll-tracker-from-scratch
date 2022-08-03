@@ -1,0 +1,59 @@
+HTML Elements:
+hard coded:
+form
+.h3 create a poll
+
+.choose a question input
+
+.choose optionA input
+
+.choose optionB input
+
+
+.start poll button
+form
+
+Past polls label
+
+dynamically generated:
+.current poll label
+
+.question display
+
+.optionA display
+.optionA vote display
+.optionA vote up button
+.optionA vote down button
+
+.optionB display
+.optionB vote display
+.optionB vote up button
+.optionB vote down button
+
+.finish poll button
+
+.past poll divs
+
+EVENTS:
+
+[.When user types their question and options and presses start poll, current poll div appears displaying question both options and a up and down vote button for each option. There will also be avote counter for each option
+
+will use renderPoll function to create elements poll elements.
+
+will use display poll to display poll in DOM]
+
+[add button increments vote counter
+subtract button decrements vote counter]
+
+
+[finish poll button adds current poll into array of polls.
+
+finish poll button also displays past polls in in past polls section]
+
+
+
+
+
+
+
+

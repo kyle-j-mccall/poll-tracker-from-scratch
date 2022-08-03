@@ -16,16 +16,65 @@
 </head>
 
 <body>
+    
     <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+        <h1>Poll Tracker</h1>
     </header>
-
     <main>
+        <h3>Current Poll</h3>
+        <section id="current-poll-section" class="current-poll">
+            
+            
+        </section>
+        <section class="vote-buttons">
+            <button id="option-a-button">vote option A</button>
+            <button id="option-b-button">vote option B</button>
+            <button id="submit-poll-button">submit poll</button>
+        </section>
+        <section class="vote-buttons">
+            <button id="subtract-a-button">subtract vote A</button>
+            <button id="subtract-b-button">subtract vote B</button>
+           
+        </section>
+        <section class="input-section">
+            <form id="poll-form">
+                <h3>Create A Poll</h3>
+                <div>
+                    <label>
+                        Question:
+                        <input id="question-input" name="question">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Option A:
+                        <input id="option-a-input" name="option-a">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Option B:
+                        <input id="option-b-input" name="option-b">
+                    </label>
+                </div>
+                <button id="create-poll-button">Create poll</button>
+            </form>
+        </section>
+    
+        <section class="past-poll-section">
+            <h3>
+                Past Polls
+            </h3>
+            <div id="past-poll-container">
 
+            </div>
+        </section>
     </main>
+    
 
-    <footer>&copy;2022 Software Developer</footer>
+   
+
+    
 
     <script type="module" src="app.js"></script>
 </body>
