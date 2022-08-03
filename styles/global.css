@@ -24,6 +24,16 @@ header {
     
 }
 
+#past-poll-container {
+    display: flex;
+    
+}
+
+#past-poll-container div {
+    margin: 10px;
+    border: 2px solid black;
+}
+
 .input-section {
     display: block;
     
